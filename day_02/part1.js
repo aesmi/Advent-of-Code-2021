@@ -2,8 +2,8 @@ const fs = require('fs');
 
 const solution = () => {
     let diff = {
-        x: Number(0),
-        y: Number(0)
+        x: 0,
+        y: 0
     };
 
     const depth = (dir, val) => {
