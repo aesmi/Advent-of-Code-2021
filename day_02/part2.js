@@ -1,4 +1,4 @@
-const fs = require('fs');
+$
 
 const solution = () => {
     let diff = {
@@ -30,11 +30,10 @@ const solution = () => {
         throw new Exception('File not found');
     }
     input = input.split(/\n/).map(el => el.split(' ')).map(el => [el[0], Number(el[1])]);
-    for (let i = 0; i < input.length; i++) {
-        depth(input[i][0], input[i][1]);
+    for (let el of input) {
+        depth(el[0], el[1]);
     }
     return diff.x * diff.y;
 }
-
 
 console.log(solution());
